@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="./js/mainDateCalc.js"></script>
+  <script type="module" src="./js/mainTimer.js"></script>
+</head>
+<body>
+  <div>
+    <!-- Переключение между разделами, по нажатию должен появляться соответствующий код html -->
+    <input id="datecalc" type="button" value="Калькулятор дат">
+    <input id="timer" type="button" value="Таймер">
+    <!-- Раздел калькулятора дат -->
+    <form id="datecalc" style="display: none">
+      <h3>Калькулятор дат</h3>
+      <label>
+          <strong>Первая дата:</strong>
+          <input type="date" name="firstDate" />
+      </label>
+      <label>
+          <strong>Вторая дата:</strong>
+          <input type="date" name="secondDate" />
+      </label>
+      <button type="submit">Расчитать промежуток</button>
+      <p id="datecalc__result"></p>
+    </form>
+    <!-- Раздел таймера -->
+    <form id="timer" style="display: none">
+      <h3>Таймер</h3>
+      <label>
+          <!-- Установленная дата/время срабатывания таймера -->
+          <strong>Таймер:</strong>
+          <input type="date" name="secondDate" />
+      </label>
+      <button type="submit">Старт</button>
+      <button type="submit">Стоп</button>
+      <p id="timer__result"></p>
+    </form>
+  </div>   
+</body>
+</html>
