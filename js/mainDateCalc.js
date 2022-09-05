@@ -2,7 +2,6 @@ import { printError, printResult } from './printResult.js'
 import getDateDiff from './getDateDiff.js'
 import { form } from './switch.js'
 
-
 datecalc.onclick = form('datecalc');
 
 form.onsubmit = (event) => {
@@ -18,6 +17,6 @@ form.onsubmit = (event) => {
   if (!firstInput || !secondInput) {
     printError('Oooppppsss - Введите дату!!!!')
   } else {
-    printResult(dateDiff)
+    printResult(dateDiff) 
   }
 }
